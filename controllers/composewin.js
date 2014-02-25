@@ -3,7 +3,6 @@ $.compose.init({
 	account : args.account
 });
 function relsClick(e) {
-	alert(JSON.stringify(e));
 	$.compose.addMention(e);
 	$.relscontainer.hide();
 }

@@ -12,7 +12,7 @@ function authclick() {
 		Ti.API.info('authclick: ' + JSON.stringify(e, null, '  '));
 		Alloy.Globals.loading.hide();
 		if (e.success) {
-			alert(e.message);
+			alert('You have been successfully authenticated.');
 		}
 	});
 };
@@ -47,6 +47,5 @@ function authFinish(e) {
 		entity : e.account
 	}]);
 	Alloy.Globals.loading.hide();
-	alert(e.message);
 };
 Ti.App.addEventListener('tentAuthFinished', authFinish);

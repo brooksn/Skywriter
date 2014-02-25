@@ -116,7 +116,7 @@ function avatarClick(avatar) {
 }
 
 function footerClick() {
-	alert('footer.');
+
 }
 
 function refresh(params) {
