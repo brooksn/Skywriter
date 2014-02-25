@@ -1,0 +1,11 @@
+"#container": {
+	backgroundColor:"aqua"
+}
+"#composewin": {
+	backgroundColor: "green"
+}
+"#hiderels": {
+	backgroundColor: 'red',
+	width: '100%',
+	tintColor: 'white'
+}

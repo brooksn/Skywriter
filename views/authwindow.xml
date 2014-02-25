@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="authwindow" class="container">
+		<TextField id="entityfield" onReturn="authclick"></TextField>
+		<Button id="authbtn" onClick="authclick">Authorize</Button>
+		<Label id="tentis">Learn about Tent and find a host at tent.io</Label>
+	</Window>
+</Alloy>

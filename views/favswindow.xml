@@ -1,0 +1,4 @@
+<Alloy>
+	<Window title="Favorites" onClose="winClose" id="favswindow" class="container">
+	</Window>
+</Alloy>

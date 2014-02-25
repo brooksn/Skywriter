@@ -1,0 +1,19 @@
+<Alloy>
+	<View account="{entity}" id="account" class="account">
+		<ImageView class="accountavatar" account="{entity}" image="{image}" />
+		<View class="boxcontainer">
+			<Label text="{title}" id="entity" />
+			<Button window="favswindow" account="{entity}" id="favswindow" onClick="openWindow" class="box favslabel">
+				<ImageView image="star.png"></ImageView>
+			</Button>
+			<Button window="mentionswindow" account="{entity}" id="mentionswindow" onClick="openWindow" class="box mentionslabel">
+				<ImageView image="bigcaret.png"></ImageView>
+			</Button>
+			<Button window="feedwindow" account="{entity}" id="feedwindow" onClick="openWindow" class="box feedlabel">Feed</Button>
+			<Button window="optionswindow" account="{entity}" id="optionswindow" onClick="openWindow" class="box accountoptionslabel">
+				<ImageView image="gear.png"></ImageView>
+			</Button>
+			<Button window="relationshipswindow" account="{entity}" id="relationshipswindow" onClick="openWindow" class="box friendslabel">Friends</Button>
+		</View>
+	</View>
+</Alloy>

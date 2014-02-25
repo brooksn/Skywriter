@@ -1,0 +1,34 @@
+<Alloy>
+	<Collection id="rels" src="relationship" />
+	<View id="relationships" showmetacard="true">
+		<Label>friends!</Label>
+		<!-- <ListView  searchView="relsearch" caseInsensitiveSearch="true" id="list" defaultItemTemplate="fullItem" onItemclick="rowClick"> -->
+		<ListView caseInsensitiveSearch="true" id="list" defaultItemTemplate="fullItem" onItemclick="rowClick">
+			<RefreshControl onRefreshstart="refresh" id="refresh" tintColor="#600"/>
+			<!-- <SearchBar id="relsearch" filterAttribute="searchableText" showCancel="true" /> -->
+			<Templates>
+				<ItemTemplate name="dual" height="50">
+					<ImageView bindId="image" defaultImage="skysquare.png" class="image"/>
+					<Label bindId="entity" class="entity text-and-image"/>
+					<Label class="direction isend" />
+					<Label class="direction iget" />
+				</ItemTemplate>
+				<ItemTemplate name="isend" height="50">
+					<ImageView bindId="image" defaultImage="skysquare.png" class="image"/>
+					<Label bindId="entity" class="entity text-and-image"/>
+					<Label class="direction isend" />
+				</ItemTemplate>
+				<ItemTemplate name="iget" height="50">
+					<ImageView bindId="image" defaultImage="skysquare.png" class="image"/>
+					<Label bindId="entity" class="entity text-and-image"/>
+					<Label class="direction iget" />
+				</ItemTemplate>
+			</Templates>
+
+		
+			<ListSection id="section" dataCollection="relationship" dataFilter="filterFunction" dataTransform="doTransform">
+				<ListItem searchableText="{searchabletext}" id="{combo}" template="{template}" entity:entity="{entity}" entity:text="{display_name}" image:image="{image}"/>
+			</ListSection>
+		</ListView>
+	</View>
+</Alloy>

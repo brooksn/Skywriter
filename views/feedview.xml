@@ -1,0 +1,36 @@
+<Alloy>
+	<Collection src="post" />
+	<View id="feedview">
+		<Label>Feed View!</Label>
+		<ListView caseInsensitiveSearch="true" id="list" defaultItemTemplate="status" onItemclick="rowClick">
+			<RefreshControl onRefreshstart="refresh" id="refresh" tintColor="#600"/>
+			<Templates>
+				<ItemTemplate name="status" class="statustemplate template">
+					<ImageView bindId="image" defaultImage="skysquare.png" class="image" onClick="avatarClick"/>
+					<Label onLink="linkPress" bindId="text" class="text status"/>
+					<ImageView bindId="lock" class="lock status"/>
+					<Label bindId="entity" class="entity status"/>
+				</ItemTemplate>
+				<ItemTemplate name="reply" class="replytemplate statustemplate template">
+					<ImageView bindId="image" defaultImage="skysquare.png" class="image" onClick="avatarClick"/>
+					<Label onLink="linkPress" bindId="text" class="text replytext"/>
+					<ImageView bindId="lock" class="lock status"/>
+					<Label bindId="entity" class="entity status"/>
+					<Label bindId="replyto" class="replyto status"/>
+				</ItemTemplate>
+				<ItemTemplate name="repost" class="reposttemplate template">
+					<Label bindId="text" class="text repost"/>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="section" dataCollection="post" dataTransform="doTransform">
+				<ListItem template="{template}" entity="{entity}" lock:image="{lock}" text:entity="{entity}" text:attributedString="{atstr}" replyto:text="{replyto}" entity:text="{entitytext}" image:entity="{entity}" image:image="{image}"/>
+			</ListSection>
+			<FooterView>
+				<View id="footer" height="20" onClick="footerClick">
+					<Label>footer.</Label>
+				</View>
+			</FooterView>
+		</ListView>
+		<Widget id="metacard" src="is.brooks.tentprofile" />
+	</View>
+</Alloy>

@@ -1,0 +1,15 @@
+".container": {
+	backgroundColor:"aqua",
+	layout: "vertical"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	top: 20,
+	color: "#000"
+}
+"Button": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	top: 20
+}

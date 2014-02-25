@@ -1,0 +1,58 @@
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+"ListView": {
+	backgroundColor: 'white',
+	tintColor: 'blue'
+}
+"#list": {
+	//top: 20,
+	//bottom: 10
+}
+
+".template":{
+	height: Ti.UI.SIZE
+}
+
+".text": {
+	font: {fontSize: 10},
+	color: 'blue',
+	left: 62,
+	top:18
+}
+".replytext": {
+	font: {fontSize: 10},
+	color: 'blue',
+	left: 62,
+	top:28
+}
+".replyto": {
+	top: 14,
+	left: 62,
+	//color: "#A2B3CF",
+	color: "rgba(0,0,0,0.5)",
+	font: {fontSize: 10}
+}
+
+".entity": {
+	top: 4,
+	left: 70,
+	//color: "#A2B3CF",
+	color: "rgba(0,0,0,0.5)",
+	font: {fontSize: 10}
+}
+".lock": {
+	top: 4,
+	left: 56,
+	height: 12,
+	width: 12
+}
+
+".image": {
+	left: 4,
+	top: 4,
+	height: 50,
+	width: 50
+}

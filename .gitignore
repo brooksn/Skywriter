@@ -1,0 +1,13 @@
+assets/getnrkey.js
+widgets/
+assets/android/
+assets/blackberry/
+assets/mobileweb/
+assets/tizen/
+.DS_Store
+build.log
+build
+npm-debug.log
+tmp
+.map
+appa.png

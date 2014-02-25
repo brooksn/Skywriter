@@ -1,0 +1,15 @@
+".container": {
+	backgroundColor:"white"
+},
+"Window": {
+	//translucent: false,
+	//statusBarStyle: Ti.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	//color: "#FFFFFF",
+	//barColor: "#5DC5D7",//original icon
+	//barColor: "#68E1F5",
+	//navTintColor: "white"
+},
+"#someid": {
+	color: "green",
+	left: 40
+}

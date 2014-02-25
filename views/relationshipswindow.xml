@@ -1,0 +1,5 @@
+<Alloy>
+	<Window title="Friends" id="relationshipswindow" class="container">
+		<Widget id="metacard" src="is.brooks.tentprofile" />
+	</Window>
+</Alloy>

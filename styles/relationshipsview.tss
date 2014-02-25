@@ -1,0 +1,55 @@
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+
+"#list": {
+	//top: 20,
+	//bottom: 10
+}
+
+"#relsearch": {
+	height: 20,
+	zIndex: 0
+}
+
+".entity": {
+	font: {fontSize: 10},
+	color: 'blue',
+	left: 60,
+	top:10
+}
+
+".account": {
+	font: {fontSize: 9},
+	right: 60,
+	bottom: 10
+}
+".spinner": {
+	left: 10,
+	top: 4,
+	width: 42,
+	height: 42
+	
+}
+".direction": {
+	top: 24
+}
+".isend": {
+	left: 70,
+	text: "<",
+	color: 'red'
+}
+".iget": {
+	left: 80,
+	text: ">",
+	color: 'green'
+}
+
+".image": {
+	left: 10,
+	top: 4,
+	height: 42,
+	width: 42
+}

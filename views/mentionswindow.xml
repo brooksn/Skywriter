@@ -1,0 +1,5 @@
+<Alloy>
+	<Window title="Mentions" onClose="winClose" id="mentionswindow" class="container">
+		
+	</Window>
+</Alloy>

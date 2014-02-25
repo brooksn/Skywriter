@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="optionswindow" class="container">
+		<Label>options!</Label>
+		<Label onClick="discoverTest">discover...</Label>
+		<Button onClick="deleteRels">Delete Rels</Button>
+		<Button onClick="deleteEntities">Delete Entities</Button>
+		<Button onClick="deleteDummies">Delete Dummies</Button>
+		<Button onClick="testPost">Test Post</Button>
+	</Window>
+</Alloy>

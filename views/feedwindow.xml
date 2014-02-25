@@ -1,0 +1,7 @@
+<Alloy>
+	<Window title="Status Feed" onClose="winClose" id="feedwindow" class="container">
+	<RightNavButton>
+		<Button onClick="openComposeWin" window="composewin" systemButton="COMPOSE" />
+	</RightNavButton>
+	</Window>
+</Alloy>

@@ -1,0 +1,10 @@
+"Window": {
+	//translucent: false,
+	statusBarStyle: Ti.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	//color: "#FFFFFF",
+	//barColor: "#5DC5D7",//original icon
+	barColor: "#68E1F5",
+	//barImage: "navbar.png",
+	//barColor: "transparent",
+	navTintColor: "white"
+}
