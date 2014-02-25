@@ -10,6 +10,6 @@
   "dependencies": {
     "nl.fokkezb.loading": "1.6",
     "is.brooks.tentprofile": "1.0",
-    "is.brooks.writestatus": "1.0"
+    "is.brooks.status": "1.0"
   }
 }

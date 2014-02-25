@@ -4,7 +4,7 @@
 		<Button onClick="rightButton" window="composewin">✅</Button>
 	</RightNavButton>
 	<View id="container">
-		<Widget id="compose" src="is.brooks.writestatus" />
+		<Widget id="compose" src="is.brooks.status" />
 		<View id="relscontainer" visible="false"/>
 	</View>
 	<View id="relscontainer" layout="vertical" visible="false">
