@@ -75,7 +75,6 @@ Ti.include('/cryptojs/enc-base64-min.js');
 var URIListener = function(e) {
 	setTimeout(function() {
 		if (Ti.App.getArguments()['url']) {
-			//alert(Ti.App.getArguments()['url']);
 			var parts = Alloy.Globals.tent.parseURI(Ti.App.getArguments()['url']);
 			if (Ti.App.getArguments()['url'].substr(0, 20) == 'skywriter://auth.com') {
 				Ti.API.info('incoming from oauth. calling Tent.authPostToken');
