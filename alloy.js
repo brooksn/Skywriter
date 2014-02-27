@@ -89,10 +89,21 @@ var URIListener = function(e) {
 						Ti.App.fireEvent('tentAuthFinished', e);
 					}
 				});
+				setTimeout(function(){
+					Alloy.Globals.loading.hide();
+				}, 8000);
 			} else {
-				Ti.API.info('incoming URI, but something went wrong: ' + Ti.App.getArguments()['url'] + ' : ' + parts['state'] + ' : ' + Alloy.Globals.tent.get);
+				Ti.API.info('skywriter opened by URI: ' + Ti.App.getArguments()['url']);
 				Ti.API.info(JSON.stringify(parts, null, '  '));
+				setTimeout(function(){
+					Alloy.Globals.loading.hide();
+				}, 2000);
 			}
+		}
+		else{
+			setTimeout(function(){
+				Alloy.Globals.loading.hide();
+			}, 2000);
 		}
 	}, 120);
 };
@@ -104,7 +115,6 @@ quitters.fetch();
 Alloy.Globals.relsviews = {};
 Alloy.Globals.windows = {};
 Alloy.Globals.cursor = {};
-Ti.App.iOS.addEventListener('backgroundfetch', Alloy.Globals.skywriter.background);
 _.each(quitters.toJSON(), function(acct) {
 	Alloy.Globals.skywriter.fetchCursor(acct.entity);
 	Alloy.Globals.skywriter.relsViews(acct.entity);

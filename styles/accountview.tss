@@ -41,7 +41,9 @@
 	width: '16%',
 	backgroundColor: 'red',
 },
-
+".mentionscount": {
+	color: 'white'
+}
 ".friendslabel": {
 	width: '84%',
 	backgroundColor: 'orange'

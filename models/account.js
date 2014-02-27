@@ -10,7 +10,8 @@ exports.definition = {
 			"tempalgo": "TEXT",
 			"hawkid": "TEXT",
 			"hawkkey": "TEXT",
-			"hawkalgo": "TEXT"
+			"hawkalgo": "TEXT",
+			"mentionscursor": "TEXT"
 		},
 		"defaults": {
 			"entity": "",
@@ -22,7 +23,8 @@ exports.definition = {
 			"tempalgo": "",
 			"hawkid": "",
 			"hawkkey": "",
-			"hawkalgo": ""
+			"hawkalgo": "",
+			"mentionscursor": "0"
 		},
 		"adapter": {
 			"type": "sql",

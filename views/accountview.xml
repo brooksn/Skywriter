@@ -7,7 +7,8 @@
 				<ImageView image="star.png"></ImageView>
 			</Button>
 			<Button window="mentionswindow" account="{entity}" id="mentionswindow" onClick="openWindow" class="box mentionslabel">
-				<ImageView image="bigcaret.png"></ImageView>
+				<ImageView id="caret" image="bigcaret.png"></ImageView>
+				<Label id="mentionscount" visible="false"></Label>
 			</Button>
 			<Button window="feedwindow" account="{entity}" id="feedwindow" onClick="openWindow" class="box feedlabel">Feed</Button>
 			<Button window="optionswindow" account="{entity}" id="optionswindow" onClick="openWindow" class="box accountoptionslabel">

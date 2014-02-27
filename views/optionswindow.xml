@@ -6,5 +6,6 @@
 		<Button onClick="deleteEntities">Delete Entities</Button>
 		<Button onClick="deleteDummies">Delete Dummies</Button>
 		<Button onClick="testPost">Test Post</Button>
+		<Button onClick="bgMentions">Background Test</Button>
 	</Window>
 </Alloy>

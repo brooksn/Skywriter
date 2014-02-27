@@ -50,6 +50,10 @@ function deleteDummies() {
 	feedb.close();
 }
 
+function bgMentions() {
+	Alloy.Globals.skywriter.background();
+}
+
 function testPost() {
 	Alloy.Globals.tent.sendRequest({
 		postjson : {

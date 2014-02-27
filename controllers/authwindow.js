@@ -10,10 +10,13 @@ function authclick() {
 		'app' : Alloy.Globals.appcredentials
 	}, function(e) {
 		Ti.API.info('authclick: ' + JSON.stringify(e, null, '  '));
-		Alloy.Globals.loading.hide();
 		if (e.success) {
 			alert('You have been successfully authenticated.');
 		}
+		else{
+			alert('Authentication failed.');
+		}
+		Alloy.Globals.loading.hide();
 	});
 };
 

@@ -2,9 +2,8 @@
 	<Collection id="rels" src="relationship" />
 	<View id="relationships" showmetacard="true">
 		<Label>friends!</Label>
-		<!-- <ListView  searchView="relsearch" caseInsensitiveSearch="true" id="list" defaultItemTemplate="fullItem" onItemclick="rowClick"> -->
 		<ListView caseInsensitiveSearch="true" id="list" defaultItemTemplate="fullItem" onItemclick="rowClick">
-			<RefreshControl onRefreshstart="refresh" id="refresh" tintColor="#600"/>
+			<!-- <RefreshControl onRefreshstart="refresh" id="refresh" tintColor="#600"/> -->
 			<!-- <SearchBar id="relsearch" filterAttribute="searchableText" showCancel="true" /> -->
 			<Templates>
 				<ItemTemplate name="dual" height="50">

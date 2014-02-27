@@ -3,10 +3,10 @@ var discoverlist = {};
 var fetchparams = {
 	query: 'SELECT * FROM relationships WHERE iget=1 OR isend=1 ORDER BY display_name ASC',
 	success: function(s){
-		$.refresh.endRefreshing();
+	//	$.refresh.endRefreshing();
 	},
 	error: function(e){
-		$.refresh.endRefreshing();
+	//	$.refresh.endRefreshing();
 	}
 };
 var rels = Alloy.Collections.relationship;
@@ -20,7 +20,6 @@ var discover = function(post){
 		discover: post.entity,
 		entity: post.entity
 	}, function(e){
-		Ti.API.info('feedview discover got this:' + JSON.stringify(e));
 		throttledFetch();
 	});
 	
@@ -36,9 +35,15 @@ var refresh = _.throttle(function(){
 	var refreshparams = fetchparams;
 	refreshparams.success = function(s){
 		_.defer(discoverOnce);
-		$.refresh.endRefreshing();
+	//	$.refresh.endRefreshing();
 	};
-	rels.fetch(refreshparams);
+	Alloy.Globals.skywriter.discoverRels({
+		account : args.account,
+		refreshparams : refreshparams
+	}, function(e){
+		rels.fetch(e.refreshparams);
+	});
+	//rels.fetch(refreshparams);
 }, 400);
 refresh();
 function discover(entity){
@@ -46,7 +51,6 @@ function discover(entity){
 		account: args.account,
 		discover: entity
 	}, function(e){
-		Ti.API.info('rels discover got this:' + JSON.stringify(e));
 		refresh();
 	});
 	
@@ -75,7 +79,6 @@ function doTransform(model) {
 	else{
 		o.searchabletext = o.entity + ' ' + o.display_name;
 	}
-	Ti.API.info(o.entity + ' isend: ' + o.isend + ' iget: ' + o.iget);
 	if(o.isend==='1' && o.iget==='1'){
 		o.template = 'dual';
 	}
